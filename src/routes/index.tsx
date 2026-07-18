@@ -51,7 +51,7 @@ const SITE = {
   address: "CCalle 20N # 8-34 Edificio el Cedro, Local 103",
   city: "Popayán, Cauca, Colombia",
   hours: "Lun a Vie: 8:00 a.m. – 6:00 p.m.  ·  Sáb: 9:00 a.m. – 1:00 p.m.",
-  mapsQuery: "JJ+Ortodoncia",
+  mapsQuery: "Odontologiajj",
   socials: {
     instagram: "#",
     facebook: "#",
