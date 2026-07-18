@@ -474,24 +474,24 @@ function Differentiators() {
     <section id="clinica" className="relative overflow-hidden bg-primary-soft/40 py-16 sm:py-20 lg:py-24">
       <div aria-hidden className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[color-mix(in_oklab,var(--yellow)_25%,white)] opacity-60 blur-3xl" />
       <div aria-hidden className="absolute -right-24 bottom-0 h-80 w-80 blob bg-[color-mix(in_oklab,var(--lime)_25%,white)] opacity-50 blur-3xl" />
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
-        <Reveal>
-          <div className="lg:col-span-5">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
+        <div className="lg:col-span-5">
+          <Reveal>
             <Chip tone="purple">Nuestro enfoque</Chip>
-            <h2 className="mt-4 font-display text-3xl font-extrabold leading-[1.1] text-primary-dark sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-[1.1] text-primary-dark sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl">
               No tratamos dientes.{" "}
               <span className="smile-underline">Tratamos personas.</span>
             </h2>
-            <p className="mt-5 text-base text-muted-foreground sm:mt-6 sm:text-lg">
+            <p className="mt-5 max-w-prose text-base text-muted-foreground sm:mt-6 sm:text-lg">
               Cada sonrisa cuenta una historia diferente. La escuchamos antes de proponer un plan.
             </p>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
         <div className="lg:col-span-7">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {items.map((t, i) => (
               <Reveal key={t} delay={i * 70}>
-                <div className="flex items-start gap-3 rounded-3xl bg-white p-5 shadow-[0_10px_30px_-20px_rgba(12,78,115,0.35)]">
+                <div className="flex h-full items-start gap-3 rounded-3xl bg-white p-5 shadow-[0_10px_30px_-20px_rgba(12,78,115,0.35)]">
                   <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground">
                     <CheckCircle2 className="h-5 w-5" />
                   </span>
@@ -502,6 +502,7 @@ function Differentiators() {
           </div>
         </div>
       </div>
+
     </section>
   );
 }
