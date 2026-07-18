@@ -510,17 +510,11 @@ function Differentiators() {
 function Team() {
   const profiles = [
     {
-      name: "Dr. Juan Jiménez",
+      name: "Dr. Juan Hurtado",
       specialty: "Ortodoncista Especialista",
       desc: "Enfocado en tratamientos personalizados y planificación de sonrisas.",
-      credentials: "Registro profesional editable",
     },
-    {
-      name: "Dra. Especialista",
-      specialty: "Odontología Integral",
-      desc: "Cuidado preventivo, restaurador y estético con visión humana.",
-      credentials: "Registro profesional editable",
-    },
+
   ];
   return (
     <section id="equipo" className="relative py-24">
