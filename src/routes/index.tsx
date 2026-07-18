@@ -301,7 +301,7 @@ function Header() {
 // ----- Hero -----
 function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
+    <section id="inicio" className="relative overflow-hidden pt-24 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24">
       {/* Background shapes */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full bg-primary-soft blur-3xl" />
@@ -309,11 +309,11 @@ function Hero() {
         <div className="absolute bottom-0 left-1/3 h-[260px] w-[260px] rounded-full bg-[color-mix(in_oklab,var(--yellow)_35%,white)] opacity-50 blur-3xl" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:gap-12 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
         <Reveal>
           <div className="max-w-xl">
             <Chip>Ortodoncia y odontología especializada</Chip>
-            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] text-primary-dark sm:text-5xl lg:text-6xl">
+            <h1 className="mt-5 font-display text-[2rem] font-extrabold leading-[1.08] text-primary-dark sm:text-5xl lg:text-6xl">
               Tu sonrisa merece un tratamiento{" "}
               <span className="smile-underline">diseñado para ti</span>
             </h1>
