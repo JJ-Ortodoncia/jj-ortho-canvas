@@ -45,11 +45,11 @@ export const Route = createFileRoute("/")({
 // ----- Editable site config (single source of truth) -----
 const SITE = {
   name: "JJ Ortodoncia",
-  whatsapp: "573000000000", // <- editable
-  phoneDisplay: "+57 300 000 0000",
-  email: "contacto@jjortodoncia.com",
-  address: "Calle 00 # 00-00",
-  city: "Colombia",
+  whatsapp: "573164288506", // <- editable
+  phoneDisplay: "+57 316 4288506",
+  email: "citas@jjortodoncia.com",
+  address: "CCalle 20N # 8-34 Edificio el Cedro, Local 103",
+  city: "Popayán, Cauca, Colombia",
   hours: "Lun a Vie: 8:00 a.m. – 6:00 p.m.  ·  Sáb: 9:00 a.m. – 1:00 p.m.",
   mapsQuery: "JJ+Ortodoncia",
   socials: {
