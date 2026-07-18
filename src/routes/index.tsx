@@ -301,7 +301,7 @@ function Header() {
 // ----- Hero -----
 function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
+    <section id="inicio" className="relative overflow-hidden pt-24 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24">
       {/* Background shapes */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full bg-primary-soft blur-3xl" />
@@ -309,11 +309,11 @@ function Hero() {
         <div className="absolute bottom-0 left-1/3 h-[260px] w-[260px] rounded-full bg-[color-mix(in_oklab,var(--yellow)_35%,white)] opacity-50 blur-3xl" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:gap-12 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
         <Reveal>
           <div className="max-w-xl">
             <Chip>Ortodoncia y odontología especializada</Chip>
-            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] text-primary-dark sm:text-5xl lg:text-6xl">
+            <h1 className="mt-5 font-display text-[2rem] font-extrabold leading-[1.08] text-primary-dark sm:text-5xl lg:text-6xl">
               Tu sonrisa merece un tratamiento{" "}
               <span className="smile-underline">diseñado para ti</span>
             </h1>
@@ -471,18 +471,18 @@ function Differentiators() {
     "Ambiente profesional y humano.",
   ];
   return (
-    <section id="clinica" className="relative overflow-hidden bg-primary-soft/40 py-24">
+    <section id="clinica" className="relative overflow-hidden bg-primary-soft/40 py-16 sm:py-20 lg:py-24">
       <div aria-hidden className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[color-mix(in_oklab,var(--yellow)_25%,white)] opacity-60 blur-3xl" />
       <div aria-hidden className="absolute -right-24 bottom-0 h-80 w-80 blob bg-[color-mix(in_oklab,var(--lime)_25%,white)] opacity-50 blur-3xl" />
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
         <Reveal>
           <div className="lg:col-span-5">
             <Chip tone="purple">Nuestro enfoque</Chip>
-            <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] text-primary-dark sm:text-5xl lg:text-6xl">
-              No tratamos <br /> dientes. <br />
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-[1.1] text-primary-dark sm:text-4xl md:text-5xl lg:text-6xl">
+              No tratamos dientes.{" "}
               <span className="smile-underline">Tratamos personas.</span>
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
+            <p className="mt-5 text-base text-muted-foreground sm:mt-6 sm:text-lg">
               Cada sonrisa cuenta una historia diferente. La escuchamos antes de proponer un plan.
             </p>
           </div>
@@ -621,76 +621,6 @@ function Process() {
   );
 }
 
-// ----- Results (before/after slider placeholder) -----
-function BeforeAfter() {
-  const [pos, setPos] = useState(50);
-  return (
-    <section className="relative bg-primary-soft/40 py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Reveal>
-          <div className="mx-auto max-w-2xl text-center">
-            <Chip tone="purple">Resultados</Chip>
-            <h2 className="mt-4 font-display text-3xl font-extrabold text-primary-dark sm:text-4xl lg:text-5xl">
-              Cambios reales, sonrisas reales
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Cada resultado depende de las condiciones específicas de cada paciente.
-            </p>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-[2rem] bg-white p-4 shadow-[var(--shadow-soft)]">
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-primary-dark to-primary select-none">
-              {/* Placeholder before/after */}
-              <div className="absolute inset-0 grid place-items-center text-center text-primary-foreground/90">
-                <div>
-                  <p className="font-display text-xl font-bold">ANTES</p>
-                  <p className="mt-1 text-xs opacity-70">Espacio para foto real del caso</p>
-                </div>
-              </div>
-              <div
-                className="absolute inset-y-0 left-0 overflow-hidden bg-gradient-to-br from-[var(--lime)] to-primary"
-                style={{ width: `${pos}%` }}
-              >
-                <div className="grid h-full place-items-center text-center text-primary-foreground/95">
-                  <div>
-                    <p className="font-display text-xl font-bold">DESPUÉS</p>
-                    <p className="mt-1 text-xs opacity-80">Espacio para foto real del caso</p>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute inset-y-0 -translate-x-1/2" style={{ left: `${pos}%` }}>
-                <div className="h-full w-[3px] bg-white/90" />
-                <div className="absolute top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-primary shadow-lg">
-                  <ArrowRight className="h-4 w-4 -scale-x-100" />
-                  <ArrowRight className="h-4 w-4" />
-                </div>
-              </div>
-              <input
-                type="range"
-                min={0}
-                max={100}
-                value={pos}
-                onChange={(e) => setPos(Number(e.target.value))}
-                aria-label="Comparación antes y después"
-                className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
-              />
-            </div>
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3 px-2 text-sm">
-              <div>
-                <p className="font-semibold text-primary-dark">Tratamiento: Ortodoncia estética</p>
-                <p className="text-muted-foreground">Duración aproximada: 18 meses · Caso editable</p>
-              </div>
-              <p className="text-xs text-muted-foreground">
-                * Los resultados varían según cada paciente.
-              </p>
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
 
 // ----- Testimonials -----
 function Testimonials() {
@@ -1146,7 +1076,7 @@ function LandingPage() {
         <Differentiators />
         <Team />
         <Process />
-        <BeforeAfter />
+        
         <Testimonials />
         <Blog />
         <FAQ />
