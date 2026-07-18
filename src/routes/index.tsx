@@ -1,37 +1,36 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
-import {
-  Menu,
-  X,
-  MessageCircle,
-  Calendar,
-  Sparkles,
-  Smile,
-  ShieldCheck,
-  HeartHandshake,
-  Stethoscope,
-  Microscope,
-  Star,
-  ChevronDown,
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-  Instagram,
-  Facebook,
-  ArrowRight,
-  ArrowUpRight,
-  CheckCircle2,
-  Baby,
-  Gem,
-  Layers,
-  Wand2,
-  Droplets,
-  Wrench,
-} from "lucide-react";
 import logo from "@/assets/logo.png";
 import specialist from "@/assets/specialist.png";
 import team from "@/assets/team.png";
+import { createFileRoute } from "@tanstack/react-router";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Baby,
+  Calendar,
+  CheckCircle2,
+  ChevronDown,
+  Clock,
+  Droplets,
+  Facebook,
+  Gem,
+  HeartHandshake,
+  Instagram,
+  Layers,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Microscope,
+  Phone,
+  ShieldCheck,
+  Smile,
+  Sparkles,
+  Star,
+  Stethoscope,
+  Wrench,
+  X
+} from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
