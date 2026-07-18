@@ -1146,7 +1146,7 @@ function LandingPage() {
         <Differentiators />
         <Team />
         <Process />
-        <BeforeAfter />
+        
         <Testimonials />
         <Blog />
         <FAQ />
