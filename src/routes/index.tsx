@@ -48,7 +48,7 @@ const SITE = {
   whatsapp: "573164288506", // <- editable
   phoneDisplay: "+57 316 4288506",
   email: "citas@jjortodoncia.com",
-  address: "CCalle 20N # 8-34 Edificio el Cedro, Local 103",
+  address: "Calle 20N # 8-34 Edificio el Cedro, Local 103",
   city: "Popayán, Cauca, Colombia",
   hours: "Lun a Vie: 8:00 a.m. – 6:00 p.m.  ·  Sáb: 9:00 a.m. – 1:00 p.m.",
   mapsQuery: "Odontologia+jj+popayan",
