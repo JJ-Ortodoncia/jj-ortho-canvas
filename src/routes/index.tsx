@@ -471,18 +471,18 @@ function Differentiators() {
     "Ambiente profesional y humano.",
   ];
   return (
-    <section id="clinica" className="relative overflow-hidden bg-primary-soft/40 py-24">
+    <section id="clinica" className="relative overflow-hidden bg-primary-soft/40 py-16 sm:py-20 lg:py-24">
       <div aria-hidden className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[color-mix(in_oklab,var(--yellow)_25%,white)] opacity-60 blur-3xl" />
       <div aria-hidden className="absolute -right-24 bottom-0 h-80 w-80 blob bg-[color-mix(in_oklab,var(--lime)_25%,white)] opacity-50 blur-3xl" />
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
         <Reveal>
           <div className="lg:col-span-5">
             <Chip tone="purple">Nuestro enfoque</Chip>
-            <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] text-primary-dark sm:text-5xl lg:text-6xl">
-              No tratamos <br /> dientes. <br />
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-[1.1] text-primary-dark sm:text-4xl md:text-5xl lg:text-6xl">
+              No tratamos dientes.{" "}
               <span className="smile-underline">Tratamos personas.</span>
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
+            <p className="mt-5 text-base text-muted-foreground sm:mt-6 sm:text-lg">
               Cada sonrisa cuenta una historia diferente. La escuchamos antes de proponer un plan.
             </p>
           </div>
