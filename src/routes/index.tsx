@@ -510,7 +510,7 @@ function Differentiators() {
 function Team() {
   const profiles = [
     {
-      name: "Dr. Juan Hurtado",
+      name: "Dr. Jose Hurtado",
       specialty: "Ortodoncista Especialista",
       desc: "Enfocado en tratamientos personalizados y planificación de sonrisas.",
     },
